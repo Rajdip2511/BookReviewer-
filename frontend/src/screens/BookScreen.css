@@ -1,0 +1,83 @@
+.book-screen {
+  min-height: 80vh;
+}
+
+.book-detail-card, .reviews-card, .review-form-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.book-title {
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.book-author {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.rating-summary {
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.stars-display, .stars-small {
+  display: inline-flex;
+  gap: 2px;
+}
+
+.star {
+  color: #ddd;
+  font-size: 1.2rem;
+  transition: color 0.2s;
+}
+
+.star.filled {
+  color: #ffc107;
+}
+
+.stars-small .star {
+  font-size: 1rem;
+}
+
+.rating-text {
+  font-weight: 600;
+  color: #555;
+}
+
+.review-item {
+  border: none;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.review-item:last-child {
+  border-bottom: none;
+}
+
+.review-comment {
+  color: #666;
+  line-height: 1.5;
+}
+
+.review-form-card {
+  position: sticky;
+  top: 2rem;
+}
+
+.review-form-card .card-header {
+  background-color: #007bff;
+  color: white;
+  border-radius: 12px 12px 0 0;
+}
+
+@media (max-width: 768px) {
+  .review-form-card {
+    position: static;
+    margin-top: 2rem;
+  }
+} 
